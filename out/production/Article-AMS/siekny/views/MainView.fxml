@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainLayout" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="siekny.controllers.MainController">
+   <top>
+      <Text fill="#000fff" strokeType="OUTSIDE" strokeWidth="0.0" text="Article Management System (AMS)" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Text>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton onAction="#onBtnAuthorClicked" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #4271b9#4271b9; -jfx-button-type: RAISED;" text="Author" textFill="WHITE" />
+            <JFXButton onAction="#onBtnCategoryClicked" prefHeight="27.0" prefWidth="105.0" style="-fx-background-color: #4271b9#4271b9; -jfx-button-type: RAISED;" text="Category" textFill="WHITE" />
+            <JFXButton onAction="#onBtnArticleClicked" prefHeight="27.0" prefWidth="102.0" style="-fx-background-color: #4271b9#4271b9; -jfx-button-type: RAISED;" text="Article" textFill="WHITE" />
+            <JFXButton onAction="#onBtnExitClicked" prefHeight="27.0" prefWidth="104.0" style="-fx-background-color: #4271b9#4271b9; -jfx-button-type: RAISED;" text="Exit Program" textFill="WHITE" />
+         </children></VBox>
+   </left>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>
